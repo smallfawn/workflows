@@ -1,0 +1,24 @@
+name: Send Message on File Change
+
+on:
+  push:
+    paths:
+      - '**' # 监听所有文件变动
+  pull_request:
+    paths:
+      - '**' # 监听所有文件变动
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        
+      - name: Send Message
+        run: |
+          echo "文件发生更改！"
+          echo "作者: ${{ github.actor }}"
+          echo "提交SHA: ${{ github.sha }}"
+          echo "提交信息: ${{ github.event.head_commit.message }}"
