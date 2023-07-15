@@ -4,8 +4,8 @@ on:
   schedule:
     - cron:  '50 12 * * *'  # 每天UTC 00:00触发
 # 读写权限
-permissions:
-  contents: write
+#permissions:
+#  contents: write
 
 jobs:
   sync:
