@@ -2,7 +2,10 @@ name: Sync Forked Repository
 
 on:
   schedule:
-    - cron:  '55 11 * * *'  # 每天UTC 00:00触发
+    - cron:  '20 12 * * *'  # 每天UTC 00:00触发
+# 读写权限
+permissions:
+  contents: write
 
 jobs:
   sync:
