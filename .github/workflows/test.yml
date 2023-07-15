@@ -13,7 +13,7 @@ jobs:
     - name: Checkout forked repository
       uses: actions/checkout@v2
       with:
-        repository: smallfawn/v_jstools
+        repository: smallfawn/v_jstools.git
         ref: main
       env:
         TOKEN: ${{ secrets.action-workflows }}
