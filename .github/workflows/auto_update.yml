@@ -11,13 +11,13 @@ jobs:
     
     steps:
     - name: Checkout forked repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         repository: smallfawn/v_jstools
         ref: main
 
     - name: Checkout upstream repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         repository: cilame/v_jstools
         ref: main
