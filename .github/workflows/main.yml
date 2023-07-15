@@ -24,6 +24,3 @@ jobs:
         git merge upstream/main # 将 "main" 替换为上游存储库的主分支名称
 
         git push origin main # 将 "main" 替换为你的主分支名称，如 "master"
-    - name: Push changes
-      run: |
-        git push origin main
