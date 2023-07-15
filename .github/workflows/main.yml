@@ -1,7 +1,7 @@
 name: Auto Update Fork
 on:
   schedule:
-    - cron: '0 19 * * *' # 设置定时执行，可根据需求自行调整
+    - cron: '30 11 * * *' # 设置定时执行，可根据需求自行调整 使用UTC 中国时间实际要减8
 
 jobs:
   update:
