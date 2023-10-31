@@ -1,4 +1,5 @@
-const fs = require('fsconst path = require('path');
+const fs = require('fs')
+const path = require('path');
 
 // 仓根目录
 const rootDir = process.cwd();
