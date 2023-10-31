@@ -23,6 +23,7 @@ jobs:
 
       - name: Run lint
         run: npm run lint
+        working-directory: ./path/to/project
 
       - name: Run script
         run: node your-script.js
